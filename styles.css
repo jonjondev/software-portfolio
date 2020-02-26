@@ -4,7 +4,7 @@
 }
 
 *::selection {
-  background: lavender; /* WebKit/Blink Browsers */
+  background: lightcoral; /* WebKit/Blink Browsers */
 }
 
 * {
@@ -19,15 +19,23 @@
 	padding-right: 15vw;
 	display: flex;
 	align-items: center;
+	background-color: #a8afeb;
 }
 
 .head-section-items {
-	padding-bottom: 15vh;
+	animation: fade-in 2s linear;
 }
 
 .pre-head-section {
+	padding-top: 15vh;
 	display: flex;
 	height: 15vh;
+}
+
+.post-head-section {
+	margin-top: 20vh;
+	text-align: center;
+	animation: fade-in 5s linear;
 }
 
 .head-section-container {
@@ -47,6 +55,11 @@
 	font-size: 40px;
 }
 
+.bottom-arrow {
+	width: 100%;
+	font-size: 50px;
+}
+
 .profile-image {
 	background-image: url("./me.png");
 	background-size: cover;
@@ -55,6 +68,8 @@
 	width: 20vw;
   	margin: 0 auto;
 }
+
+
 
 .sliding-background-container {
 	width: 50%;
@@ -90,5 +105,17 @@
 	}
 	100%{
 		background-color: blue;
+	}
+}
+
+@keyframes fade-in {
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
 	}
 }
