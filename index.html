@@ -1,6 +1,44 @@
 <html>
 	<head>
 		<title>Scroll Test</title>
+		<style>
+			body {
+				animation: change 10s step-start infinite alternate;
+			}
+			.container {
+				width: 50%;
+				margin: 0 auto;
+				height: 500px;
+				overflow: hidden;
+			}
+			.sliding-background {
+			  background: url("./pic.jpg") repeat-y;
+			  height: 3150px; /* The image size * 3 */
+			  width: 1300px; /* The image size */
+			  animation: slide 10s linear infinite alternate;
+			}
+			@keyframes slide {
+				0%{
+					transform: translate3d(0, 0, 0);
+					background-image: url("./pic.jpg");
+				}
+				100%{
+					transform: translate3d(0, -1050px, 0); /* The image size */
+					background-image: url("./pic_2.jpg");
+				}
+			}
+			@keyframes change {
+				10%{
+					background-color: red;
+				}
+				50%{
+					background-color: yellow;
+				}
+				100%{
+					background-color: blue;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<div class="container">
