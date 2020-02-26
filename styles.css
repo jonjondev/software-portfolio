@@ -22,25 +22,23 @@
 	background-color: #a8afeb;
 }
 
-.head-section-items {
-	animation: fade-in 2s linear;
-}
-
 .pre-head-section {
 	padding-top: 15vh;
 	display: flex;
 	height: 15vh;
+	animation: fade-in 1s linear;
 }
 
 .post-head-section {
 	margin-top: 20vh;
 	text-align: center;
-	animation: fade-in 5s linear;
+	animation: fade-in 8s linear;
 }
 
 .head-section-container {
 	display: flex;
 	align-items: center;
+	animation: fade-in 3s linear;
 }
 
 .head-section-left {
