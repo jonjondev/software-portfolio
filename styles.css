@@ -71,6 +71,32 @@
 
 
 
+
+
+.skills-section {
+	height: 100vh;
+	background-color: red;
+}
+
+
+.achievements-section {
+	height: 30vh;
+	background-color: green;
+}
+
+.projects-section {
+	height: 100vh;
+	background-color: blue;
+}
+
+.footer-section {
+	height: 10vh;
+	background-color: pink;
+}
+
+
+
+
 .sliding-background-container {
 	width: 50%;
 	margin: 0 auto;
