@@ -5,7 +5,45 @@
 
 .head-section {
 	height: 100vh;
-	background-color: red;
+	padding-left: 15vw;
+	padding-right: 15vw;
+	display: flex;
+	align-items: center;
+}
+
+.head-section-items {
+	padding-bottom: 15vh;
+}
+
+.pre-head-section {
+	display: flex;
+	height: 15vh;
+}
+
+.head-section-container {
+	display: flex;
+	align-items: center;
+}
+
+.head-section-left {
+	flex: 1 0;
+}
+
+.head-section-right {
+	flex: 1 0;
+}
+
+.intro-text {
+	font-size: 40px;
+}
+
+.profile-image {
+	background-image: url("./me.png");
+	background-size: cover;
+	flex-grow: 2;
+	height: 20vw;
+	width: 20vw;
+  	margin: 0 auto;
 }
 
 .sliding-background-container {
