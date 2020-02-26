@@ -1,8 +1,14 @@
-body {
-	animation: change 10s step-start infinite alternate;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.container {
+.head-section {
+	height: 100vh;
+	background-color: red;
+}
+
+.sliding-background-container {
 	width: 50%;
 	margin: 0 auto;
 	height: 500px;
