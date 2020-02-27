@@ -155,18 +155,23 @@ li {
 }
 
 .section-game-image {
+	flex: 1 1;
 	width: 500px;
 	max-width:100%;
 	max-height:100%;
 	padding-right: 15px;
 }
 
-.game-image-vertical {
+.game-image-vertical-container {
 	height: 300px;
-	width: auto;
+}
+
+.game-image-vertical {
+	width: 140px;
 }
 
 .section-game-text {
+	flex: 1 1;
 	font-size: 18px;
 	font-family: 'RalewayLight';
 }
@@ -193,6 +198,30 @@ li {
 .social-links {
 	text-align: right;
 	word-spacing: 1vw;
+}
+
+@media only screen and (max-width: 1600px) {
+	.section-game-container {
+		flex-direction: column;
+		padding-right: 0px;
+	}
+	.section-game-text {
+		padding-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.section {
+		flex-direction: column;
+	}
+	.footer-section {
+		margin: 0 auto;
+		text-align: center;
+		flex-direction: column-reverse;
+	}
+	.social-links {
+		text-align: center;
+	}
 }
 
 
