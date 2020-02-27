@@ -145,13 +145,12 @@ li {
 .section-game-container {
 	display: flex;
 	flex-direction: row;
-	padding-top: 10px;
-	padding-bottom: 10px;
 }
 
 .section-game-title {
 	font-family: 'RalewayBold';
 	font-size: 22px;
+	padding-bottom: 10px;
 }
 
 .section-game-image {
