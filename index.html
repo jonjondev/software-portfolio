@@ -6,6 +6,13 @@
 		<link rel="preload" as="font" href="./fonts/ralewayregular.woff2" type="font/woff2" crossorigin="anonymous">
 		<link rel="preload" as="font" href="./fonts/ralewaybold.woff2" type="font/woff2" crossorigin="anonymous">
 		<link rel="preload" as="font" href="./fonts/ralewaylight.woff2" type="font/woff2" crossorigin="anonymous">
+		<script>
+			function openEmail() {
+				let email = 'gmail.com';
+				email = ('jdmoallem' + '@' + email);
+				window.location.href = 'mailto:' + email;
+			}
+		</script>
 	</head>
 	<body>
 		<div class="head-section">
@@ -186,7 +193,7 @@
 		</div>
 		<div class="footer-section">
 			<p class="footer-item">Developed by Jonathan Moallem, 2020<br>Inspired by Joeb Rogers</p>
-			<p class="footer-item social-links"><a target="_blank" href="https://github.com/J-Mo63">GITHUB</a> <a target="_blank" href="https://twitter.com/J_Mo63">TWITTER</a> <a target="_blank" href="https://www.linkedin.com/in/jmo63/">LINKEDIN</a> <a target="_blank" href="https://jonathanmoallem.com">WEBSITE</a> <a target="_blank" href="">EMAIL</a></p>
+			<p class="footer-item social-links"><a target="_blank" href="https://github.com/J-Mo63">GITHUB</a> <a target="_blank" href="https://twitter.com/J_Mo63">TWITTER</a> <a target="_blank" href="https://www.linkedin.com/in/jmo63/">LINKEDIN</a> <a target="_blank" href="https://jonathanmoallem.com">WEBSITE</a> <a href="" onClick="openEmail(); return false;">EMAIL</a></p>
 		</div>
 	</body>
 </html>
