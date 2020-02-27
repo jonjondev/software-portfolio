@@ -1,16 +1,28 @@
 @font-face {
-    font-family: 'RalewayRegular';
-    src: url('./raleway_regular.ttf');
+	font-family: 'RalewayRegular';
+	font-weight: 400;  
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+000-5FF;
+	src: local('RalewayRegular'), url('./fonts/ralewayregular.woff2') format('woff2'), url('./fonts/ralewayregular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'RalewayBold';
-    src: url('./raleway_bold.ttf');
+	font-family: 'RalewayBold';
+	font-weight: 400;  
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+000-5FF;
+	src: local('RalewayBold'), url('./fonts/ralewaybold.woff2') format('woff2'), url('./fonts/ralewaybold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'RalewayLight';
-    src: url('./raleway_light.ttf');
+	font-family: 'RalewayLight';
+	font-weight: 400;  
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+000-5FF;
+	src: local('RalewayLight'), url('./fonts/ralewaylight.woff2') format('woff2'), url('./fonts/ralewaylight.woff') format('woff');
 }
 
 *::selection {
