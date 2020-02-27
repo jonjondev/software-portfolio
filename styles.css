@@ -14,7 +14,7 @@
 }
 
 *::selection {
-  background: #fc6; /* WebKit/Blink Browsers */
+  	background: #fc6; /* WebKit/Blink Browsers */
 }
 
 * {
@@ -22,6 +22,10 @@
   padding: 0;
   font-family: 'RalewayRegular';
   color: #444452;
+}
+
+mark {
+	background: #fc6;
 }
 
 b {
@@ -138,17 +142,23 @@ li {
 	padding-bottom: 50px;
 }
 
+.section-game-container {
+	display: flex;
+	flex-direction: row;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
 .section-game-title {
 	font-family: 'RalewayBold';
 	font-size: 22px;
 }
 
 .section-game-image {
-	padding-top: 10px;
-	padding-bottom: 10px;
 	width: 500px;
 	max-width:100%;
 	max-height:100%;
+	padding-right: 15px;
 }
 
 .game-image-vertical {
@@ -197,6 +207,10 @@ li {
 	}
 	.social-links {
 		text-align: center;
+	}
+	.section-game-container {
+		flex-direction: column;
+		padding-right: 0px;
 	}
 }
 
