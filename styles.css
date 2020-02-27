@@ -272,7 +272,19 @@ li {
 	}
 }
 
-.sliding-background-container {
+@keyframes fade-in {
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+/*.sliding-background-container {
 	width: 50%;
 	margin: 0 auto;
 	height: 500px;
@@ -281,8 +293,8 @@ li {
 
 .sliding-background {
   background: url("./pic.jpg") repeat-y;
-  height: 3150px; /* The image size * 3 */
-  width: 1300px; /* The image size */
+  height: 3150px;
+  width: 1300px;
   animation: slide 10s linear infinite alternate;
 }
 
@@ -292,7 +304,7 @@ li {
 		background-image: url("./pic.jpg");
 	}
 	100%{
-		transform: translate3d(0, -1050px, 0); /* The image size */
+		transform: translate3d(0, -1050px, 0);
 		background-image: url("./pic_2.jpg");
 	}
 }
@@ -307,16 +319,4 @@ li {
 	100%{
 		background-color: blue;
 	}
-}
-
-@keyframes fade-in {
-	0%{
-		opacity: 0;
-	}
-	50%{
-		opacity: 0;
-	}
-	100%{
-		opacity: 1;
-	}
-}
+}*/
