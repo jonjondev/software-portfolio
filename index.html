@@ -14,6 +14,23 @@
 				email = ('jdmoallem' + '@' + email);
 				window.location.href = 'mailto:' + email;
 			}
+
+			function toggleMoreProjects() {
+				let moreProjectsButton = document.getElementById("more-projects-button");
+				let moreProjects = document.getElementById("more-projects");
+				if (moreProjects.style.display === "none") {
+					moreProjects.style.display = "inline";
+					moreProjectsButton.innerHTML = "See Fewer Projects"
+				}
+				else {
+					moreProjects.style.display = "none";
+					moreProjectsButton.innerHTML = "See More Projects"
+				}
+			}
+
+			document.addEventListener('DOMContentLoaded', function (event) {
+			  	toggleMoreProjects();
+			});
 		</script>
 	</head>
 	<body>
@@ -105,128 +122,133 @@
 						<p class="section-game-text">Developed in <mark>Godot engine</mark> to provide a testbed application to my honours <mark>research into interactive drama systems</mark> titled "Authoring Interactive Drama Games via Agent-Based Drama Managers", it features an emergent environment built using a  <mark>smart objects</mark>, <mark>GOAP-based AI agents </mark> and an <mark>HGOAP drama manager</mark> (hierarchical GOAP).<br><br><a target="_blank" href="https://github.com/J-Mo63/emergent-narrative-testbed">View Reposity on Github</a></p>
 					</div>
 				</div>
-				<div class="section-game">
-					<p class="section-game-title">Move Fast, Break Faces</p>
-					<div class="section-game-container">
-						<img class="section-game-image" src="./game-images/mfbf.gif">
-						<p class="section-game-text">Developed in <mark>Unity engine</mark> as part of a team for a university subject in games design, "Move Fast, Break Faces" delivers exactly that, with fast-paced goblin-face-splattering in a topdown gameplay style. The game was <mark>selected for the UTS Student Games Showcase</mark>.<br><br><a target="_blank" href="https://github.com/DemonicSoftware/move-fast-break-faces">View Reposity on Github</a></p>
-					</div>
-				</div>
-				<div class="section-game">
-					<p class="section-game-title">AI Behaviour Testbed</p>
-					<div class="section-game-container">
-						<img class="section-game-image" src="./game-images/ai-testbed.gif">
-						<p class="section-game-text">Developed in <mark>Godot engine</mark> to provide simple implementation examples, it effectively demonstrates the benefits and limits of different AI <mark>behaviour selection algorithms</mark>. It can hotswap various selection algorithms at runtime including: Finite & Hierarchical Finite State Machines (<mark>FSM & HFSM</mark>), <mark>Behaviour Trees</mark>, Goal-Oriented Action Planning (<mark>GOAP</mark>), and Hierarchical Task Networks (<mark>HTN</mark>) planners.</mark><br><br><a target="_blank" href="https://github.com/J-Mo63/ai-behaviour-testbed">View Reposity on Github</a></p>
-					</div>
-				</div>
-				<div class="section-game">
-					<p class="section-game-title">Emergence Testbed</p>
-					<div class="section-game-container">
-						<img class="section-game-image" src="./game-images/emergence.gif">
-						<p class="section-game-text">Built in <mark>Godot engine</mark> as a testbed for research on controlling <mark>emergent properties in a complex system</mark>, the project simulates a small population of "dudes", which appear to work together to build a settlement to avoid certain death. The project also outputs a running transcript of events that can be later analysed for research purposes.<br><br><a target="_blank" href="https://github.com/J-Mo63/emergence-test-bed">View Reposity on Github</a></p>
-					</div>
-				</div>
-				<div class="section-game">
-					<p class="section-game-title">Curve Flattener</p>
-					<div class="section-game-container">
-						<img class="section-game-image" src="./game-images/curve_flattener.gif">
-						<p class="section-game-text">Built in <mark>Godot engine</mark>, the game draws on simulations and data modelling for epidemiology in order to demonstrate the place of quarantine and social distancing in combatting outbreaks. Players attempt use these tools in order to quell the outbreak and flatten the curve which is <mark>sharable to social media</mark>.<br><br><a target="_blank" href="https://jonathanmoallem.com/curve-flattener/">Play Curve Flattener In Browser</a><br>(Chrome & Firefox Only)<br><br><a target="_blank" href="https://github.com/J-Mo63/curve-flattener">View Reposity on Github</a></p>
-					</div>
-				</div>
-				<div class="section-game">
-					<p class="section-game-title">UTS Discover</p>
-					<div class="section-game-container">
-						<div class="game-image-vertical-container">
-							<img class="section-game-image game-image-vertical" src="./game-images/uts_discover.gif">
+				<div id="more-projects">
+					<div class="section-game">
+						<p class="section-game-title">Move Fast, Break Faces</p>
+						<div class="section-game-container">
+							<img class="section-game-image" src="./game-images/mfbf.gif">
+							<p class="section-game-text">Developed in <mark>Unity engine</mark> as part of a team for a university subject in games design, "Move Fast, Break Faces" delivers exactly that, with fast-paced goblin-face-splattering in a topdown gameplay style. The game was <mark>selected for the UTS Student Games Showcase</mark>.<br><br><a target="_blank" href="https://github.com/DemonicSoftware/move-fast-break-faces">View Reposity on Github</a></p>
 						</div>
-						<p class="section-game-text">Built for the University of Technology Sydney's international marketing team, the app delvers an <mark>alternate reality (AR)</mark> experience using the <mark>Unity engine</mark> alongside the <mark>Vuforia AR library</mark>. It features the ability to display a map of the university campus on an AR marker card, as well as a 360 degree tour of the UTS campus. The game was selected for, and <mark>won the UTS Student Project Showcase</mark>.<br><br><a target="_blank" href="https://testflight.apple.com/join/5DMw7WO9">Join the iOS Beta</a><br><br><a target="_blank" href="https://play.google.com/apps/testing/com.AR4EVA4NOW.UTSDiscover">Join the Android Beta</a><br><br><a target="_blank" href="https://github.com/ar4eva4now/uts-discover">View Reposity on Github</a></p>
 					</div>
-				</div>
-				<div class="section-game">
-					<p class="section-game-title">RNG Stronghold</p>
-					<div class="section-game-container">
-						<img class="section-game-image" src="./game-images/rng.gif">
-						<p class="section-game-text">Created as part of another 5-hour game jam, in the <mark>Godot engine</mark> with a team of three. It eventually turned into the second game of my "12 game in 12 months" challenge. The game is heavily inspired by <mark>resource allocation-based board games</mark>, and features a quirky, pixelated art-style for lots of <mark>physics-based dice rolling</mark>.<br><br><a target="_blank" href="https://github.com/Team-ALLCAPS/rng-stronghold">View Reposity on Github</a></p>
+					<div class="section-game">
+						<p class="section-game-title">AI Behaviour Testbed</p>
+						<div class="section-game-container">
+							<img class="section-game-image" src="./game-images/ai-testbed.gif">
+							<p class="section-game-text">Developed in <mark>Godot engine</mark> to provide simple implementation examples, it effectively demonstrates the benefits and limits of different AI <mark>behaviour selection algorithms</mark>. It can hotswap various selection algorithms at runtime including: Finite & Hierarchical Finite State Machines (<mark>FSM & HFSM</mark>), <mark>Behaviour Trees</mark>, Goal-Oriented Action Planning (<mark>GOAP</mark>), and Hierarchical Task Networks (<mark>HTN</mark>) planners.</mark><br><br><a target="_blank" href="https://github.com/J-Mo63/ai-behaviour-testbed">View Reposity on Github</a></p>
+						</div>
 					</div>
-				</div>
-				<div class="section-game">
-					<p class="section-game-title">The Innkeeper</p>
-					<div class="section-game-container">
-						<img class="section-game-image" src="./game-images/the_innkeeper.gif">
-						<p class="section-game-text">Created as part of another 5-hour game jam in the <mark>Godot engine</mark> with a team of four. The game sees you, an innkeeper, serve patrons food and drink in a fantasy tavern setting, featuring a fun, cutesy artstyle, with a <mark>minimalist, atmospheric approach to game UI</mark>.<br><br><a target="_blank" href="https://github.com/Team-ALLCAPS/the-innkeeper">View Reposity on Github</a></p>
+					<div class="section-game">
+						<p class="section-game-title">Emergence Testbed</p>
+						<div class="section-game-container">
+							<img class="section-game-image" src="./game-images/emergence.gif">
+							<p class="section-game-text">Built in <mark>Godot engine</mark> as a testbed for research on controlling <mark>emergent properties in a complex system</mark>, the project simulates a small population of "dudes", which appear to work together to build a settlement to avoid certain death. The project also outputs a running transcript of events that can be later analysed for research purposes.<br><br><a target="_blank" href="https://github.com/J-Mo63/emergence-test-bed">View Reposity on Github</a></p>
+						</div>
 					</div>
-				</div>
-				<div class="section-game">
-					<p class="section-game-title">Love Lunatic</p>
-					<div class="section-game-container">
-						<img class="section-game-image" src="./game-images/love_lunatic.gif">
-						<p class="section-game-text">This project, built with the <mark>L&Ouml;VE 2D graphics library</mark> using the <mark>Lua scripting language</mark>, was an attempt to create something of a top-down RPG framework/engine. It features a <mark>tile-editor program</mark> that renders scenes with the same system used in gameplay, and includes <mark>event and dialogue systems</mark> which work hand-in-hand with the map-centric authoring tools.<br><br><a target="_blank" href="https://github.com/J-Mo63/love-lunatic">View Reposity on Github</a></p>
+					<div class="section-game">
+						<p class="section-game-title">Curve Flattener</p>
+						<div class="section-game-container">
+							<img class="section-game-image" src="./game-images/curve_flattener.gif">
+							<p class="section-game-text">Built in <mark>Godot engine</mark>, the game draws on simulations and data modelling for epidemiology in order to demonstrate the place of quarantine and social distancing in combatting outbreaks. Players attempt use these tools in order to quell the outbreak and flatten the curve which is <mark>sharable to social media</mark>.<br><br><a target="_blank" href="https://jonathanmoallem.com/curve-flattener/">Play Curve Flattener In Browser</a><br>(Chrome & Firefox Only)<br><br><a target="_blank" href="https://github.com/J-Mo63/curve-flattener">View Reposity on Github</a></p>
+						</div>
 					</div>
-				</div>
-				<div class="section-game">
-					<p class="section-game-title">M*A*S*H</p>
-					<div class="section-game-container">
-						<img class="section-game-image" src="./game-images/mash.gif">
-						<p class="section-game-text">Created with <mark>Unity engine</mark> for a class assignment in <mark>agile games development</mark>, the project attempts to recreate the classic Atari 2600 game, M*A*S*H (1983). The original game assets were found or recreated to provide as close of an experience to the original game as possible.<br><br><a target="_blank" href="https://github.com/J-Mo63/mash">View Reposity on Github</a></p>
+					<div class="section-game">
+						<p class="section-game-title">UTS Discover</p>
+						<div class="section-game-container">
+							<div class="game-image-vertical-container">
+								<img class="section-game-image game-image-vertical" src="./game-images/uts_discover.gif">
+							</div>
+							<p class="section-game-text">Built for the University of Technology Sydney's international marketing team, the app delvers an <mark>alternate reality (AR)</mark> experience using the <mark>Unity engine</mark> alongside the <mark>Vuforia AR library</mark>. It features the ability to display a map of the university campus on an AR marker card, as well as a 360 degree tour of the UTS campus. The game was selected for, and <mark>won the UTS Student Project Showcase</mark>.<br><br><a target="_blank" href="https://testflight.apple.com/join/5DMw7WO9">Join the iOS Beta</a><br><br><a target="_blank" href="https://play.google.com/apps/testing/com.AR4EVA4NOW.UTSDiscover">Join the Android Beta</a><br><br><a target="_blank" href="https://github.com/ar4eva4now/uts-discover">View Reposity on Github</a></p>
+						</div>
 					</div>
-				</div>
-				<div class="section-game">
-					<p class="section-game-title">Super Mario Bros.</p>
-					<div class="section-game-container">
-						<img class="section-game-image" src="./game-images/mario.gif">
-						<p class="section-game-text">Created with <mark>Unity engine</mark> for a group class assignment in <mark>agile games development</mark>, the project attempts to recreate the classic NES game, Super Mario Bros. (1985). The original game assets were found or recreated to provide as close of an experience to the original game as possible.<br><br><a target="_blank" href="https://github.com/team-won/super-mario-bros">View Reposity on Github</a></p>
+					<div class="section-game">
+						<p class="section-game-title">RNG Stronghold</p>
+						<div class="section-game-container">
+							<img class="section-game-image" src="./game-images/rng.gif">
+							<p class="section-game-text">Created as part of another 5-hour game jam, in the <mark>Godot engine</mark> with a team of three. It eventually turned into the second game of my "12 game in 12 months" challenge. The game is heavily inspired by <mark>resource allocation-based board games</mark>, and features a quirky, pixelated art-style for lots of <mark>physics-based dice rolling</mark>.<br><br><a target="_blank" href="https://github.com/Team-ALLCAPS/rng-stronghold">View Reposity on Github</a></p>
+						</div>
 					</div>
-				</div>
+					<div class="section-game">
+						<p class="section-game-title">The Innkeeper</p>
+						<div class="section-game-container">
+							<img class="section-game-image" src="./game-images/the_innkeeper.gif">
+							<p class="section-game-text">Created as part of another 5-hour game jam in the <mark>Godot engine</mark> with a team of four. The game sees you, an innkeeper, serve patrons food and drink in a fantasy tavern setting, featuring a fun, cutesy artstyle, with a <mark>minimalist, atmospheric approach to game UI</mark>.<br><br><a target="_blank" href="https://github.com/Team-ALLCAPS/the-innkeeper">View Reposity on Github</a></p>
+						</div>
+					</div>
+					<div class="section-game">
+						<p class="section-game-title">Love Lunatic</p>
+						<div class="section-game-container">
+							<img class="section-game-image" src="./game-images/love_lunatic.gif">
+							<p class="section-game-text">This project, built with the <mark>L&Ouml;VE 2D graphics library</mark> using the <mark>Lua scripting language</mark>, was an attempt to create something of a top-down RPG framework/engine. It features a <mark>tile-editor program</mark> that renders scenes with the same system used in gameplay, and includes <mark>event and dialogue systems</mark> which work hand-in-hand with the map-centric authoring tools.<br><br><a target="_blank" href="https://github.com/J-Mo63/love-lunatic">View Reposity on Github</a></p>
+						</div>
+					</div>
+					<div class="section-game">
+						<p class="section-game-title">M*A*S*H</p>
+						<div class="section-game-container">
+							<img class="section-game-image" src="./game-images/mash.gif">
+							<p class="section-game-text">Created with <mark>Unity engine</mark> for a class assignment in <mark>agile games development</mark>, the project attempts to recreate the classic Atari 2600 game, M*A*S*H (1983). The original game assets were found or recreated to provide as close of an experience to the original game as possible.<br><br><a target="_blank" href="https://github.com/J-Mo63/mash">View Reposity on Github</a></p>
+						</div>
+					</div>
+					<div class="section-game">
+						<p class="section-game-title">Super Mario Bros.</p>
+						<div class="section-game-container">
+							<img class="section-game-image" src="./game-images/mario.gif">
+							<p class="section-game-text">Created with <mark>Unity engine</mark> for a group class assignment in <mark>agile games development</mark>, the project attempts to recreate the classic NES game, Super Mario Bros. (1985). The original game assets were found or recreated to provide as close of an experience to the original game as possible.<br><br><a target="_blank" href="https://github.com/team-won/super-mario-bros">View Reposity on Github</a></p>
+						</div>
+					</div>
 
-				<div class="section-game">
-					<p class="section-game-title">Pongagon</p>
-					<div class="section-game-container">
-						<img class="section-game-image" src="./game-images/pongagon.png">
-						<p class="section-game-text">A hand-drawn, minimalist mobile game for <mark>Android & iOS</mark> built in the <mark>Unity engine</mark> about "keeping the pong inside the gon", essentially being a single player game of the classic arcade game, Pong. To date it has accrued over <mark>20 thousand downloads on the AppStore</mark> alone. <i>"Like Skyrim with Gons" - Not Polygon</i><br><br><a target="_blank" href="https://sudo-code.com/pongagon.html">Download on Android & iOS</a></p>
+					<div class="section-game">
+						<p class="section-game-title">Pongagon</p>
+						<div class="section-game-container">
+							<img class="section-game-image" src="./game-images/pongagon.png">
+							<p class="section-game-text">A hand-drawn, minimalist mobile game for <mark>Android & iOS</mark> built in the <mark>Unity engine</mark> about "keeping the pong inside the gon", essentially being a single player game of the classic arcade game, Pong. To date it has accrued over <mark>20 thousand downloads on the AppStore</mark> alone. <i>"Like Skyrim with Gons" - Not Polygon</i><br><br><a target="_blank" href="https://sudo-code.com/pongagon.html">Download on Android & iOS</a></p>
+						</div>
 					</div>
-				</div>
-				<div class="section-game">
-					<p class="section-game-title">BubbleTime</p>
-					<div class="section-game-container">
-						<img class="section-game-image" src="./game-images/bubbletime.png">
-						<p class="section-game-text">Developed for <mark>iOS devices</mark> using the <mark>Swift programming language</mark> for a university subject in iOS app development, the game <mark>uses the phone's gyroscope</mark> for bubble-popping action.</mark><br><br><a target="_blank" href="https://apps.apple.com/au/app/bubbletime/id1404117360">Download on iOS</a><br><br><a target="_blank" href="https://github.com/J-Mo63/bubbletime">View Reposity on Github</a></p>
+					<div class="section-game">
+						<p class="section-game-title">BubbleTime</p>
+						<div class="section-game-container">
+							<img class="section-game-image" src="./game-images/bubbletime.png">
+							<p class="section-game-text">Developed for <mark>iOS devices</mark> using the <mark>Swift programming language</mark> for a university subject in iOS app development, the game <mark>uses the phone's gyroscope</mark> for bubble-popping action.</mark><br><br><a target="_blank" href="https://apps.apple.com/au/app/bubbletime/id1404117360">Download on iOS</a><br><br><a target="_blank" href="https://github.com/J-Mo63/bubbletime">View Reposity on Github</a></p>
+						</div>
 					</div>
-				</div>
-				<div class="section-game">
-					<p class="section-game-title">BirdBrains</p>
-					<div class="section-game-container">
-						<img class="section-game-image" src="./game-images/birdbrains.png">
-						<p class="section-game-text">Developed using <mark>Processing 3 and Java</mark> for a university subject in interactive media, the experience <mark>pulls realtime data from Twitter</mark> to deliver a turn-based interactive experience about how Twitter was used through the 2016 US election for social engineering based gameplay. The project was <mark>selected for the UTS Student Major Works Expo</mark>.<br><br><a target="_blank" href="https://github.com/TeamBoxCat/BirdBrains">View Reposity on Github</a></p>
+					<div class="section-game">
+						<p class="section-game-title">BirdBrains</p>
+						<div class="section-game-container">
+							<img class="section-game-image" src="./game-images/birdbrains.png">
+							<p class="section-game-text">Developed using <mark>Processing 3 and Java</mark> for a university subject in interactive media, the experience <mark>pulls realtime data from Twitter</mark> to deliver a turn-based interactive experience about how Twitter was used through the 2016 US election for social engineering based gameplay. The project was <mark>selected for the UTS Student Major Works Expo</mark>.<br><br><a target="_blank" href="https://github.com/TeamBoxCat/BirdBrains">View Reposity on Github</a></p>
+						</div>
 					</div>
-				</div>
-				<div class="section-game">
-					<p class="section-game-title">The Gumption Fables</p>
-					<div class="section-game-container">
-						<img class="section-game-image" src="./game-images/bog.png">
-						<p class="section-game-text">Developed in the <mark>Ren'Py visual novel engine and modified in Python</mark>, the game was made as part of my <mark>highschool Software Design & Development couse major work</mark>. The engine's functionality was modified to accomodate for <mark>point & click gameplay</mark> and features an original story with properly bizarre puzzles and absurdist dialogue.<br><br><a target="_blank" href="https://github.com/J-Mo63/gumption-fables">View Reposity on Github</a></p>
+					<div class="section-game">
+						<p class="section-game-title">The Gumption Fables</p>
+						<div class="section-game-container">
+							<img class="section-game-image" src="./game-images/bog.png">
+							<p class="section-game-text">Developed in the <mark>Ren'Py visual novel engine and modified in Python</mark>, the game was made as part of my <mark>highschool Software Design & Development couse major work</mark>. The engine's functionality was modified to accomodate for <mark>point & click gameplay</mark> and features an original story with properly bizarre puzzles and absurdist dialogue.<br><br><a target="_blank" href="https://github.com/J-Mo63/gumption-fables">View Reposity on Github</a></p>
+						</div>
 					</div>
-				</div>
-				<div class="section-game">
-					<p class="section-game-title">Signature Keys</p>
-					<div class="section-game-container">
-						<img class="section-game-image" src="./game-images/signature_keys.png">
-						<p class="section-game-text">Built for <mark>iOS devices</mark> using the <mark>Swift programming language</mark> for a university subject in iOS app development, the game <mark>takes advantage of a number of Apple's libraries</mark>, as well as <mark>Firebase, and AudioKit</mark> to teach players simple piano progressions with fun, rewarding gameplay, and online leaderboards.</mark><br><br><a target="_blank" href="https://github.com/BlinkingLightStudios/tunetilt">View Reposity on Github</a></p>
+					<div class="section-game">
+						<p class="section-game-title">Signature Keys</p>
+						<div class="section-game-container">
+							<img class="section-game-image" src="./game-images/signature_keys.png">
+							<p class="section-game-text">Built for <mark>iOS devices</mark> using the <mark>Swift programming language</mark> for a university subject in iOS app development, the game <mark>takes advantage of a number of Apple's libraries</mark>, as well as <mark>Firebase, and AudioKit</mark> to teach players simple piano progressions with fun, rewarding gameplay, and online leaderboards.</mark><br><br><a target="_blank" href="https://github.com/BlinkingLightStudios/tunetilt">View Reposity on Github</a></p>
+						</div>
 					</div>
-				</div>
-				<div class="section-game">
-					<p class="section-game-title">Sunk</p>
-					<div class="section-game-container">
-						<img class="section-game-image" src="./game-images/sunk.png">
-						<p class="section-game-text">Developed for <mark>iOS and Android</mark> devices in the <mark>Unity engine</mark>, the game features a minimalist, two player game of pool for touch devices with unrealistically realistic ball physics and gripping snooker-esque gameplay.<br><br><a target="_blank" href="https://github.com/SudoCodeSoftware/sunk">View Reposity on Github</a></p>
+					<div class="section-game">
+						<p class="section-game-title">Sunk</p>
+						<div class="section-game-container">
+							<img class="section-game-image" src="./game-images/sunk.png">
+							<p class="section-game-text">Developed for <mark>iOS and Android</mark> devices in the <mark>Unity engine</mark>, the game features a minimalist, two player game of pool for touch devices with unrealistically realistic ball physics and gripping snooker-esque gameplay.<br><br><a target="_blank" href="https://github.com/SudoCodeSoftware/sunk">View Reposity on Github</a></p>
+						</div>
 					</div>
-				</div>
 
-				<div class="section-game">
-					<p class="section-game-title">CodeSprint</p>
-					<div class="section-game-container">
-						<img class="section-game-image" src="./game-images/codesprint.png">
-						<p class="section-game-text">Created using the <mark>Android SDK with Java</mark>, CodeSprint is a multiplayer coding trivia platform for Android that helps users learn to program through coding challenges made to be done fast. The game includes social features for competing with friends on daily challenges, and utilises <mark>Firebase for auth and leaderboard tracking</mark>.<br><br><a target="_blank" href="https://github.com/J-Mo63/code-sprint">View Reposity on Github</a></p>
+					<div class="section-game">
+						<p class="section-game-title">CodeSprint</p>
+						<div class="section-game-container">
+							<img class="section-game-image" src="./game-images/codesprint.png">
+							<p class="section-game-text">Created using the <mark>Android SDK with Java</mark>, CodeSprint is a multiplayer coding trivia platform for Android that helps users learn to program through coding challenges made to be done fast. The game includes social features for competing with friends on daily challenges, and utilises <mark>Firebase for auth and leaderboard tracking</mark>.<br><br><a target="_blank" href="https://github.com/J-Mo63/code-sprint">View Reposity on Github</a></p>
+						</div>
 					</div>
+				</div>
+				<div class="centered-container">
+					<button id="more-projects-button" onclick="toggleMoreProjects()"></button>
 				</div>
 			</div>
 		</div>
