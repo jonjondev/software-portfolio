@@ -85,20 +85,26 @@ button:active {
 }
 
 .head-section-items {
-	height: 80%;
-	margin-top: 10%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
 .pre-head-section {
+	margin-top: 10%;
 	animation: fade-in 1s linear;
 }
 
 .post-head-section {
+	margin-bottom: 10%;
 	text-align: center;
 	animation: fade-in 6s linear;
+}
+
+.head-section-image {
+	text-align: center;
+	display: none;
 }
 
 .head-section-container {
@@ -113,19 +119,11 @@ button:active {
 
 .head-section-right {
 	flex: 1 0;
+	text-align: center;
 }
 
 .intro-text {
 	font-size: 40px;
-}
-
-.profile-image {
-	background-image: url("./me.png");
-	background-size: cover;
-	flex-grow: 2;
-	height: 20vw;
-	width: 20vw;
-  	margin: 0 auto;
 }
 
 .bottom-arrow {
@@ -159,6 +157,16 @@ button:active {
 	flex: 2 0;
 	font-size: 20px;
 	font-family: 'RalewayLight';
+}
+
+.headshot {
+	shape-outside: circle();
+	border-radius: 50%;
+	height: 20vw;
+	width: 20vw;
+	min-height: 150px;
+	min-width: 150px;
+  	margin: 0 auto;
 }
 
 .section-list {
@@ -268,8 +276,11 @@ button:active {
 }
 
 @media only screen and (max-width: 800px) {
+	.head-section-container {
+		flex-direction: column-reverse;
+	}
 	.head-section-right {
-		display: none;
+		margin-bottom: 10%;
 	}
 }
 
@@ -283,7 +294,6 @@ button:active {
 	.footer-section {
 		padding-bottom: 20px;
 	}
-
 	.head-section {
 		padding-left: 10vw;
 		padding-right: 10vw;
@@ -302,40 +312,3 @@ button:active {
 		opacity: 1;
 	}
 }
-
-/*.sliding-background-container {
-	width: 50%;
-	margin: 0 auto;
-	height: 500px;
-	overflow: hidden;
-}
-
-.sliding-background {
-  background: url("./pic.jpg") repeat-y;
-  height: 3150px;
-  width: 1300px;
-  animation: slide 10s linear infinite alternate;
-}
-
-@keyframes slide {
-	0%{
-		transform: translate3d(0, 0, 0);
-		background-image: url("./pic.jpg");
-	}
-	100%{
-		transform: translate3d(0, -1050px, 0);
-		background-image: url("./pic_2.jpg");
-	}
-}
-
-@keyframes change {
-	10%{
-		background-color: red;
-	}
-	50%{
-		background-color: yellow;
-	}
-	100%{
-		background-color: blue;
-	}
-}*/
