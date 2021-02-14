@@ -127,8 +127,9 @@ button:active {
 }
 
 .bottom-arrow {
+	margin-top: 10px;
 	width: 100%;
-	font-size: 50px;
+	font-size: 40px;
 }
 
 
