@@ -181,6 +181,10 @@ button:active {
 	line-height: 40px;
 }
 
+.half-break {
+	height: 5px;
+}
+
 .contact-link {
 	padding-top: 5px;
 	padding-bottom: 5px;

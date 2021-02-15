@@ -23,9 +23,9 @@
 				element.onclick = null;
 			}
 
-			function toggleMoreProjects() {
-				let moreProjectsButton = document.getElementById("more-projects-button");
-				let moreProjects = document.getElementById("more-projects");
+			function toggleMore(button, section) {
+				let moreProjectsButton = document.getElementById(button);
+				let moreProjects = document.getElementById(section);
 				if (moreProjects.style.display === "none") {
 					moreProjects.style.display = "inline";
 					moreProjectsButton.innerHTML = "See Fewer Projects"
@@ -37,7 +37,8 @@
 			}
 
 			document.addEventListener('DOMContentLoaded', function (event) {
-			  	toggleMoreProjects();
+			  	toggleMore('more-games-button', 'more-games');
+			  	toggleMore('more-software-button', 'more-software');
 			});
 		</script>
 	</head>
@@ -168,7 +169,7 @@
 						<p class="section-game-text">Developed in <mark>Godot engine</mark> to provide a testbed application to my honours <mark>research into interactive drama systems</mark> titled "Authoring Interactive Drama Games via Agent-Based Drama Managers", it features an emergent environment built using a  <mark>smart objects</mark>, <mark>GOAP-based AI agents </mark> and an <mark>HGOAP drama manager</mark> (hierarchical GOAP).<br><br><a target="_blank" href="https://github.com/J-Mo63/emergent-narrative-testbed">View Repository on Github</a></p>
 					</div>
 				</div>
-				<div id="more-projects">
+				<div id="more-games">
 					<div class="section-game">
 						<p class="section-game-title">Move Fast, Break Faces</p>
 						<div class="section-game-container">
@@ -300,7 +301,60 @@
 					</div>
 				</div>
 				<div class="centered-container">
-					<button id="more-projects-button" onclick="toggleMoreProjects()"></button>
+					<button id="more-games-button" onclick="toggleMore('more-games-button', 'more-games')"></button>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<p class="section-heading">Software I've Made</p>
+			<div class="section-games">
+				<ul class="section-list">
+					<li>
+						<b>The Daily Brief: </b>A commercial <mark>Android app</mark> I built for strategic news site, <a target="_blank" href="https://www.foreignbrief.com">Foreign Brief</a>, featuring a daily feed and subscription features, including tags, search, and map-view.
+						<div class="half-break"></div>
+						<a target="_blank" href="https://play.google.com/store/apps/details?id=com.foreign_brief.daily_brief">Download App</a>
+					</li>
+					<li>
+						<b>Frost Crystal: </b>A barebones, <mark>open source, modular API</mark> for the <mark>Crystal language</mark> for super light-weight deployments in <mark>Docker</mark>... and it's super cool.
+						<div class="half-break"></div>
+						<a target="_blank" href="https://github.com/J-Mo63/frost-crystal">View Repository on GitHub</a>
+					</li>
+					<li>
+						<b>MyWay Sinatra: </b>An <mark>open source project</mark> for a barebones <mark>Ruby Sinatra</mark> framework with modular boilerplates for <mark>both API and web-app</mark> usage... and it's super suave.
+						<div class="half-break"></div>
+						<a target="_blank" href="https://github.com/J-Mo63/myway-sinatra">View Repository on GitHub</a>
+					</li>
+					<div id="more-software">
+						<li>
+							<b>Contact Register: </b>A CLI application in <mark>Python</mark> for managing contact lists across multiple formats, including text, HTML, CSV, and JSON.
+							<div class="half-break"></div>
+							<a target="_blank" href="https://github.com/J-Mo63/contact-register">View Repository on GitHub</a>
+						</li>
+						<li>
+							<b>AEPi Australia Site: </b>A <mark>Ruby on Rails</mark> web-app I built for the <a target="_blank" href="https://www.aepi.org.au">Alpha Epsilon Pi Australia</a>, featuring forums, contact list, blog, job listings and more.
+							<div class="half-break"></div>
+							<a target="_blank" href="https://github.com/J-Mo63/aepi-au-web">View Repository on GitHub</a>
+						</li>
+						<li>
+							<b>The Liner Notes: </b>An album review site I built using <mark>Python Django</mark>, employing a minimalistic, highly stylised aesthetic.
+							<div class="half-break"></div>
+							<a target="_blank" href="https://github.com/J-Mo63/liner-notes">View Repository on GitHub</a>
+						</li>
+						<li>
+							<b>Polity Web: </b>A <mark>React/Redux web-client</mark> for  in-depth analysis & research on the latest political commentary & news.
+							<div class="half-break"></div>
+							<a target="_blank" href="https://github.com/J-Mo63/polity-web">View Repository on GitHub</a>
+						</li>
+						<li>
+							<b>Texbooks With Friends: </b>A web-app for textbook listing and exchange built in <mark>Java EE</mark>, it takes advantage of <mark>JavaServerPages, JavaServlets and Twitter-Bootstrap</mark>.
+							<div class="half-break"></div>
+							<a target="_blank" href="https://github.com/TheCornflowerAssociation/textbooks-with-friends">View Repository on GitHub</a>
+						</li>
+					</div>
+				</ul>
+				<br>
+				<div class="centered-container">
+					<button id="more-software-button" onclick="toggleMore('more-software-button', 'more-software')"></button>
 				</div>
 			</div>
 		</div>
