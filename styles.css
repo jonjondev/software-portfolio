@@ -176,6 +176,26 @@ button:active {
 	font-family: 'RalewayLight';
 }
 
+.contact-link-wrapper {
+	display: inline-block;
+	line-height: 40px;
+}
+
+.contact-link {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
+	background-color: #444452;
+	color: white;
+	text-decoration: none;
+}
+
+.contact-link i {
+	color: white;
+}
+
 .section-games {
 	flex: 2 0;
 }

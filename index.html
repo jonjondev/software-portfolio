@@ -16,6 +16,13 @@
 				window.location.href = 'mailto:' + email;
 			}
 
+			function mutateElement(elementName, content, link, icon) {
+				let element = document.getElementById(elementName);
+				element.innerHTML = icon ? '<i class="fas ' + icon + '"></i> ' + content : content;
+				element.href = link;
+				element.onclick = null;
+			}
+
 			function toggleMoreProjects() {
 				let moreProjectsButton = document.getElementById("more-projects-button");
 				let moreProjects = document.getElementById("more-projects");
@@ -70,9 +77,40 @@
 				<br><br>
 				I love <mark>programming</mark> and enjoy spending my free time learning new tools and languages, which has provided me with a great deal of flexibility with regard to the kinds of projects I am able to work on, from games, to networking tools, and even analytics. However I also enjoy (and have experience with) a broad range of creative fields, including: <mark>gameplay and narrative design</mark>, <mark>UX&I design</mark>, music production and composition, and video editing.
 				<br><br>
-				If you were to ask me about what gets me out of bed in the morning, I would say it's making cool stuff. At my core, I am a creator, and I love to craft experiences, software, games, products, and many more amazing things. In this, I have developed a passion for learning - especially when I can apply it to my craft. So if I'm not working hard at my research, I'm likely at a game jam, learning a new skill, or off hiking somewhere.
+				If you were to ask me about what gets me out of bed in the morning, I would say it's making cool stuff. At my core, I am a creator, and I love to craft experiences, software, games, and many more amazing things. I've developed a passion for learning in service of creation, so if I'm not working hard on one of my projects, I'm likely at a game jam, learning a new skill, or off hiking somewhere.
 				<br><br>
-				<a target="_blank" href="./documents/Jonathan Moallem - Resume.pdf">View R&#233;sum&#233;</a>
+				<a target="_blank" href="./documents/Jonathan Moallem - Resume.pdf">Download R&#233;sum&#233;</a>
+				<br><br>
+				<span class="contact-link-wrapper">
+					<a id="emailAddress" onClick="mutateElement('emailAddress', 'jdmoallem@icloud.com', 'mailto:jdmoallem@icloud.com', 'fa-envelope'); return false;" class="contact-link" target="_blank" href="">
+						<i class="fas fa-envelope"></i>&nbsp;Email
+					</a>
+				</span>
+				<span class="contact-link-wrapper">
+					<a id="phoneNumber" onClick="mutateElement('phoneNumber', '(+61) 450 500 490', 'tel:+61450500490', 'fa-phone'); return false;" class="contact-link" target="_blank" href="">
+						<i class="fas fa-phone"></i>&nbsp;Mobile
+					</a>
+				</span>
+				<span class="contact-link-wrapper">
+					<a class="contact-link" target="_blank" href="https://www.linkedin.com/in/jmo63/">
+						<i class="fab fa-linkedin-in"></i>&nbsp;LinkedIn
+					</a>
+				</span>
+				<span class="contact-link-wrapper">
+					<a class="contact-link" target="_blank" href="https://github.com/J-Mo63">
+						<i class="fab fa-github"></i>&nbsp;GitHub
+					</a>
+				</span>
+				<span class="contact-link-wrapper">
+					<a class="contact-link" target="_blank" href="https://twitter.com/JonJonRespawned">
+						<i class="fab fa-twitter"></i>&nbsp;Twitter
+					</a>
+				</span>
+				<span class="contact-link-wrapper">
+					<a class="contact-link" target="_blank" href="https://j-mo63.itch.io">
+						<i class="fab fa-itch-io"></i>&nbsp;itch.io
+					</a>
+				</span>
 			</p>
 		</div>
 		<div class="section">
