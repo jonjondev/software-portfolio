@@ -191,12 +191,16 @@ button:active {
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 5px;
-	background-color: #444452;
-	color: white;
+	border: 1px solid #444452;
 	text-decoration: none;
 }
 
-.contact-link i {
+.contact-link:hover {
+	background-color: #444452;
+	color: white;
+}
+
+.contact-link:hover i {
 	color: white;
 }
 
